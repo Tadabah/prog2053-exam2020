@@ -1,5 +1,3 @@
-
-
 import { LitElement, html, css } from "../../node_modules/lit-element/lit-element.js";
 
 class EditUser extends LitElement {
@@ -33,9 +31,9 @@ class EditUser extends LitElement {
             <p>Last name</p>
             <input id="lastName" name="lastName" value="${this.user.lastName}">
             <p> Type your old password here</p>
-            <input id="oldpwd" name="oldpwd" type="password" value="">
+            <input type="password" id="oldpwd" name="oldpwd"  value="">
             <p> Type the new password </p>
-            <input id="pwd" name="pwd" type="password" value="">
+            <input type="password" id="pwd" name="pwd" value="">
           </div>
           <input type="submit" @click=${this.updateUser} id="submitForm" name="editUser" class="btn" value="Click me to edit the user now!"></input>
           </form>
@@ -54,9 +52,9 @@ class EditUser extends LitElement {
     }).then(res=>res.json())
       .then(data=>{
         if (data.status=='success') {
-            console.log("The user was updated");
+            console.log("User update");
         } else {
-            console.log("The user was not updated");
+            console.log("User not updated");
         }
       })
   }
