@@ -13,4 +13,4 @@ I denne oppgaven skal du lage samme funksjonaliteten med web komponenter. I file
 
 NB, i oppgave/www/node_modules ligger lit-element med de endringer som skal til for at det fungerer uten å bruke "polymer serve" (dvs, koden fungerer direkte i docker/XAMPP).
 
-Documents / Code has been inspired by earlier sources, such as the IMT2291 EXAM from Herman Andersen Dyrkorn. And my own PROG2053 project earlier this semester.
+Documents / Code has been inspired by earlier sources, such as the IMT2291 EXAM løsningsforslag from Herman Andersen Dyrkorn. And my own PROG2053 project earlier this semester.

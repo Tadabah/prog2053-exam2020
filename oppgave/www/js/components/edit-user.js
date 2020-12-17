@@ -32,7 +32,10 @@ class EditUser extends LitElement {
             <input id="firstName" name="firstName" value="${this.user.firstName}">
             <p>Last name</p>
             <input id="lastName" name="lastName" value="${this.user.lastName}">
-            
+            <p> Type your old password here</p>
+            <input id="oldpwd" name="oldpwd" type="password" value="">
+            <p> Type the new password </p>
+            <input id="pwd" name="pwd" type="password" value="">
           </div>
           <input type="submit" @click=${this.updateUser} id="submitForm" name="editUser" class="btn" value="Click me to edit the user now!"></input>
           </form>
